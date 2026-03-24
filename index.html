@@ -3,57 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Check Out My Video</title>
+  <title>Video Preview</title>
   
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@gametechnex">
-  <meta name="twitter:title" content="Check Out My Video">
-  <meta name="twitter:description" content="Watch my latest video on YouTube">
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:player" content="https://gametechnex.github.io/video-preview/">
+  <meta name="twitter:player:width" content="1280">
+  <meta name="twitter:player:height" content="720">
   <meta name="twitter:image" content="https://res.cloudinary.com/ddtn6muws/video/upload/v1774362383/Purple_Blue_Elegant_Thank_You_For_Watching_Video_20250413_163637_0001_zit6vf.mp4">
   
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Check Out My Video">
-  <meta property="og:description" content="Watch my latest video on YouTube">
-  <meta property="og:image" content="https://res.cloudinary.com/ddtn6muws/video/upload/v1774362383/Purple_Blue_Elegant_Thank_You_For_Watching_Video_20250413_163637_0001_zit6vf.mp4">
+  <script>
+    // Redirect to YouTube after 2 seconds
+    setTimeout(function() {
+      window.location.href = "https://youtu.be/Jgss7UqqihQ?si=6en-NxeGe7DUvCkX";
+    }, 2000);
+  </script>
   
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: black;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 20px;
+      height: 100vh;
     }
     video {
       max-width: 100%;
-      width: 600px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    a {
-      background: #FF0000;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    a:hover {
-      background: #cc0000;
+      max-height: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Check Out My Video</h1>
-  <video controls width="600">
+  <video width="1280" height="720" controls autoplay>
     <source src="https://res.cloudinary.com/ddtn6muws/video/upload/v1774362383/Purple_Blue_Elegant_Thank_You_For_Watching_Video_20250413_163637_0001_zit6vf.mp4" type="video/mp4">
   </video>
-  <a href="https://youtu.be/Jgss7UqqihQ?si=6en-NxeGe7DUvCkX">Watch Full Video on YouTube</a>
 </body>
 </html>
